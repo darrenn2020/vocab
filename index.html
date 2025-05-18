@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vocab</title>
+
+    <!-- Array of Every Word -->
+    <script src="words.js"></script>
+    <!-- Main JS Code -->
+    <script src="script.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="get-word">Get Word</button>
-    <div id="word-display"></div>
+    <h1>Vocab</h1>
+    <!-- btn that generates the word -->
+    <button id="get-word" onclick=chooseWord()>Get Word</button>
+    <div id="word-display">
+        <!-- Word Appears Here -->
+    </div>
+
+    <button id="definition" onclick="define()">Define Word</button>
+    <div id="definition-display">
+        <!-- Word Definition Appears Here -->
+    </div>
 </body>
 </html>
